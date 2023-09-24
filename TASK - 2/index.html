@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HopeHarbor</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* Reset and base styles */
+    *, *:before, *:after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: Tahoma, sans-serif;
+    }
+     body {
+            background-image: url('image/d.jpg'); /* Replace 'your-image-url.jpg' with the URL or path to your background image */
+            background-size: cover; /* This ensures the background image covers the entire body */
+            background-repeat: no-repeat; /* Prevents the background image from repeating */
+            background-attachment: fixed; /* Keeps the background fixed as you scroll */
+          }
+    /* Menu styles */
+    .custom-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      height: 80px;
+      display: flex;
+      justify-content: right;
+      align-items: right;
+      z-index: 1;
+    }
+
+    .menu-list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .menu-item {
+      margin: 0 10px;
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Content wrapper styles */
+    .custom-content-wrapper {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      padding: 80px 0 0; /* Adjust padding to create space for menu */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Screen styles */
+    .custom-screen {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .custom-screen h2 {
+      font-size: 36px;
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 80px;
+    }
+
+    .custom-screen p {
+      font-size: 20px;
+      color: #555;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .custom-image {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    /* Button styles */
+    .custom-button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    .custom-button:hover {
+      background-color: #45a049;
+    }
+
+    .custom-button i {
+      margin-right: 10px;
+    }
+    #thankYouMessage{
+      color: white;
+      font-weight: bold;
+      font-size: 30px;
+      height: 140px;
+      background-color: green;
+      padding: auto;
+      display: none;
+      text-align: center;
+      margin-top: 140px;
+    }
+  </style>
+</head>
+<body>
+  
+
+  <div class="custom-menu">
+    <ul class="menu-list">
+      <li class="menu-item">
+        <i class="fa fa-home"></i><a href="#1"> Home</a>
+      </li>
+      <li class="menu-item">
+        <i class="fa fa-question-circle"></i><a href="#2"> About</a>
+      </li>
+      <li class="menu-item">
+        <i class="fa fa-image"></i><a href="#3"> Gallery</a>
+      </li>
+      <li class="menu-item">
+        <i class="fa fa-envelope"></i><a href="#4"> Contact</a>
+      </li>
+    </ul>
+  </div>
+<!-- Thank You Message -->
+  <div id="thankYouMessage" style="display: none">
+    <p>We sincerely thank you for your support!</p>
+  </div>
+  <div class="custom-content-wrapper">
+    <div class="custom-screen" id="1">
+      <h2>In a Global Community, We're All Family!</h2>
+      <p>
+        "At HopeHarbor, we believe in the power of hope and community. Our platform is your safe haven for making a meaningful impact when urgent needs arise. Crowdfunding is now as easy as reaching for your smartphone, and anyone can be a beacon of positive change. More and more people across India are harnessing the convenience of online payments and digital access to join our journey, where we unite to provide swift support for critical causes. Together, we navigate the digital waters of compassion, ensuring that help reaches those who need it most."
+      </p>
+      <a href="payment.html" class="custom-button">
+         <center><i class="fa fa-credit-card"></i>Donate Now</center>
+      </a>
+      <div class="custom-image" style="background-image: url(https://media1.giphy.com/media/iFyQMfqxYFhO2b4o3T/giphy.gif?cid=ecf05e47oschc64u92q3jv0gharm02x9nv3f9clf5s301yo8&ep=v1_gifs_search&rid=giphy.gif&ct=g)"></div>
+    </div><br><br><br><br><br><br><br><br>
+    
+    <div class="custom-screen" id="2">
+      <h2>"Why Choose HopeHarbor? - Our Commitment</h2>
+      <p>
+        At HopeHarbor, we're dedicated to ensuring that your donations are a force for good. Our mission is to provide a trusted platform for your charitable contributions. We go the extra mile by conducting a rigorous due diligence process, which includes legal, compliance, financial, and impact assessments for every donation to non-profit organizations. Our commitment extends to in-person visits to beneficiaries and comprehensive feedback reports.
+      </p>
+      <ul>
+    <li><strong>Diverse Choice:</strong> Explore a wide selection of over 200 organizations to support.</li>
+    <li><strong>Simplicity:</strong> Make a difference with a simple click of a button.</li>
+    <li><strong>Convenience:</strong> Easily contribute on a monthly basis.</li>
+    <li><strong>Credibility:</strong> Donate with absolute confidence to verified partner NGOs.</li>
+    <li><strong>Scalability:</strong> Even small contributions can have a significant impact. Donate as little as Rs. 110 per month and be a part of something bigger.</li>
+</ul>
+      <div class="custom-image" style="background-image: url(https://media.tenor.com/DLgdj2GG14cAAAAi/goal-tiktok.gif)"></div>
+    </div>
+    
+    <div class="custom-screen" id="3">
+      <h2>Gallery of Memories</h2>
+      <div class="custom-image"><img src="image/a.jpg" alt="Image 1" width="350px" style="border-radius: 30px">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<img src="image/b.jpg" alt="Image 1" width="350px" style="border-radius: 30px"></div><br><br><br><br>
+      <div class="custom-image"><img src="image/c.jpg" alt="Image 1" width="350px" style="border-radius: 30px">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<img src="image/e.jpg" alt="Image 1" width="350px" style="border-radius: 30px"></div><br><br><br><br>
+    </div><br><br><br><br><br><br>
+    <div class="custom-screen" id="4">
+      <h2>Contact Us</h2>
+      <p>
+        Address: Dehradun, Uttarakhand
+        <br>
+        Phone No: 1234567809
+        <br>
+        Email ID: abc@gmail.com
+      </p>
+      <div class="custom-image" style="background-image: url(https://media.tenor.com/JGe-GqqM014AAAAi/ice-bear.gif); background-size: cover; background-position: center;"></div><br><br><br><br><br><br><br><br>
+
+    </div>
+  </div>
+
+   <script>
+    // Function to show the thank you message and hide it after 5 seconds
+    function showThankYouMessage() {
+      const thankYouMessage = document.getElementById("thankYouMessage");
+      thankYouMessage.style.display = "block";
+      setTimeout(function () {
+        thankYouMessage.style.display = "none";
+      }, 5000); // Hide after 5 seconds
+    }
+
+    // Call the showThankYouMessage function when the page loads
+    window.onload = showThankYouMessage;
+  </script>
+</body>
+</html>
